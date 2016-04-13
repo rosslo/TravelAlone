@@ -1,0 +1,105 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import '_variables.scss';
+body{
+	font-weight: bold;
+}
+img{
+	display: block;
+}
+#third .title{
+	position: absolute;
+	top: 20px;
+}
+.title ,.image, .description{
+	margin-top: 50px;
+}
+.title{
+	-webkit-animation-duration: 1.5s;
+}
+.image{
+	z-index: 999;
+	max-width: 730px;
+	-webkit-animation-delay: 0.5s;
+}
+.description{
+	-webkit-animation-delay: 0.5s;
+}
+.section{
+	position: relative;
+}
+.header-box{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 19px solid $blue;
+	@extend %box-default;
+	.image{
+		position: absolute;
+	    top:0;
+	    right:0;
+	    bottom:0;
+	    left:0;
+	    margin:auto;
+		-webkit-animation-delay: 0s;
+	}
+}
+.content-box{
+	padding-left: 105px;
+	text-align: left;
+	border-right: 188px solid $blue;
+	.title, .image, .description{
+		visibility: hidden;
+	}
+}
+$box-types: (
+  blue : $blue,
+  blue-green : rgb(75,182,185),
+  yellow : rgb(246,214,45)
+) !default;
+@each $name, $color in $box-types {
+  .box-#{$name} {
+    border-color: $color;
+  }
+}
+
+.ball-group{
+	clear: both;
+	width: 100%;
+	position: absolute;
+	&.-top{
+		top: 0;
+	}
+	&.-bottom{
+		bottom: 0;
+	}
+}
+.small-ball{
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin: 27px 24px;
+	background-color: #000;
+	@include border-radius(50%);
+	&.-left{
+		float: left;
+	}
+	&.-right{
+		float: right;
+	}
+}
+$ball-types: (
+  red : rgb(232,130,118),
+  blue : $blue,
+  green : rgb(140,196,87),
+  yellow : rgb(246,214,45)
+) !default;
+@each $name, $color in $ball-types {
+  .ball-#{$name} {
+    background:$color;
+  }
+}

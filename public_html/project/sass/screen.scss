@@ -1,0 +1,39 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import '_variables.scss';
+body{
+	text-align: center;
+	font-weight: bold;
+}
+h1{
+	margin: 0;
+}
+.col-2{
+	width: 50%;
+	float: left;
+}
+.title{
+	text-transform: uppercase;
+	-webkit-animation-duration: 1.5s;
+	margin-bottom: 1em;
+}
+.image{
+	-webkit-animation-delay: 0.5s;
+	width: 300px;
+	height: auto;
+}
+.header-box{
+	background-color: $blue;
+}
+.description{
+	line-height: 2em;
+	font-weight: normal;
+	text-align: left;
+}
+.content-box{
+	.title, .image, .description{
+		visibility: hidden;
+	}
+}

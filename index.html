@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Travel Alone</title>
+	<link rel="stylesheet" type="text/css" href="project/stylesheets/normalize.css">
+	<link rel="stylesheet" type="text/css" href="project/stylesheets/animate.css">
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="project/stylesheets/screen.css">
+	<script src="https://code.jquery.com/jquery-1.12.3.min.js"
+	integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="jquery.fullPage.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('#fullpage').fullpage({
+				'afterLoad': function(anchorLink, index){
+					$('.title, .image, .description').css('visibility','hidden');
+					$('.title, .image, .description').removeClass('fadeInUp animated');
+					if(index == 1){
+						$('.header-box .title, .header-box .image').css('visibility','visible');
+						$('.header-box .title, .header-box .image').addClass('fadeInUp animated');
+					}
+					if(index == 2){
+						$('#first .title, #first .image, #first .description').css('visibility','visible');
+						$('#first .title, #first .image, #first .description').addClass('fadeInUp animated');
+					}
+					if(index == 3){
+						$('#second .title, #second .image, #second .description').css('visibility','visible');
+						$('#second .title, #second .image, #second .description').addClass('fadeInUp animated');
+					}
+					if(index == 4){
+						$('#third .title, #third .image').css('visibility','visible');
+						$('#third .title, #third .image').addClass('fadeInUp animated');
+					}
+				}
+		    });
+		});
+	</script>
+</head>
+<body>
+	<div id="fullpage">
+		<div class="section  active">
+			<div class="header-box">
+				<div class="ball-group -top">
+					<span class='small-ball -left ball-red'></span>
+					<span class='small-ball -right ball-blue'></span>
+				</div>
+				<img class="image" src="images/brand.png">
+				<div class="ball-group -bottom">
+					<span class='small-ball -left ball-green'></span>
+					<span class='small-ball -right ball-yellow'></span>
+				</div>
+			</div>
+		</div>
+		<div class="section content-box box-blue" id="first">
+			<img class='title' src="images/title-story.png">
+			<img class="image" src="images/image-story.png">
+			<img class='description' src="images/desc-story.png">
+		</div>
+		<div class="section content-box box-blue-green" id="second">
+			<img class='title' src="images/title-service.png">
+			<img class="image" src="images/image-service.png">
+		</div>
+		<div class="section content-box box-yellow" id="third">
+			<img class='title' src="images/title-facility.png">
+			<div class="slide active">
+				<img class="image" src="images/image-facility-1.jpg">
+			</div>
+			<div class="slide">
+				<img class="image" src="images/image-facility-2.jpg">
+			</div>
+			<div class="slide">
+				<img class="image" src="images/image-facility-3.jpg">
+			</div>
+			<div class="slide">
+				<img class="image" src="images/image-facility-4.jpg">
+			</div>
+			<div class="slide">
+				<img class="image" src="images/image-facility-5.jpg">
+			</div>
+			<div class="slide">
+				<img class="image" src="images/image-facility-6.jpg">
+			</div>
+			<div class="slide">
+				<img class="image" src="images/image-facility-7.jpg">
+			</div>
+			<div class="slide">
+				<img class="image" src="images/image-facility-8.jpg">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
