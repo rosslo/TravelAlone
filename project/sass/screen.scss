@@ -6,15 +6,13 @@
 body{
 	font-weight: bold;
 }
-img{
-	display: block;
-}
-#third .title{
+#box-facility .title{
 	position: absolute;
 	top: 20px;
 }
 .title ,.image, .description{
-	margin-top: 50px;
+	margin-top: 30px;
+	display: block;
 }
 .title{
 	-webkit-animation-duration: 1.5s;
@@ -23,6 +21,11 @@ img{
 	z-index: 999;
 	max-width: 730px;
 	-webkit-animation-delay: 0.5s;
+}
+#box-service{
+	.image{
+		margin-left: 100px;
+	}
 }
 .description{
 	-webkit-animation-delay: 0.5s;
@@ -56,13 +59,17 @@ img{
 		visibility: hidden;
 	}
 }
+.fp-controlArrow.fp-next {
+    right: -120px;
+}
 $box-types: (
-  blue : $blue,
-  blue-green : rgb(75,182,185),
-  yellow : rgb(246,214,45)
+  box-blue : $blue,
+  box-blue-green : rgb(75,182,185),
+  box-yellow : rgb(246,214,45),
+  box-green : rgb(140,196,87)
 ) !default;
 @each $name, $color in $box-types {
-  .box-#{$name} {
+  .#{$name} {
     border-color: $color;
   }
 }
@@ -93,13 +100,30 @@ $box-types: (
 	}
 }
 $ball-types: (
-  red : rgb(232,130,118),
-  blue : $blue,
-  green : rgb(140,196,87),
-  yellow : rgb(246,214,45)
+  ball-red : rgb(232,130,118),
+  ball-blue : $blue,
+  ball-green : rgb(140,196,87),
+  ball-yellow : rgb(246,214,45)
 ) !default;
 @each $name, $color in $ball-types {
-  .ball-#{$name} {
+  .#{$name} {
     background:$color;
   }
+}.btn-box{
+	text-align: center;
+	.btn{
+		letter-spacing: 2px;
+		color: $blue;
+		text-decoration: none;
+		border-radius: 24px;
+		border: 2px solid $blue;
+		padding: 15px 20px;
+		margin: 0 50px;
+		@include transition;
+		&:hover{
+			background-color: #3b70b0;
+			color: $white;
+			border-color: #3b70b0;
+		}
+	}
 }

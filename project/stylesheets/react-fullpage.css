@@ -1,0 +1,129 @@
+/* line 4, ../sass/_variables.scss */
+.header-box, .content-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 2, ../sass/react-fullpage.scss */
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Microsoft JhengHei";
+  font-size: 16px;
+}
+
+/* line 9, ../sass/react-fullpage.scss */
+.header-box, .content-box {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  border-bottom: 1px dashed #000;
+}
+
+/* line 16, ../sass/react-fullpage.scss */
+.nav-bar {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  background-color: rgba(75, 177, 202, 0.4);
+  width: 100%;
+  border-bottom: 1px dashed #4bb1ca;
+}
+/* line 23, ../sass/react-fullpage.scss */
+.nav-bar > .list {
+  float: right;
+}
+/* line 25, ../sass/react-fullpage.scss */
+.nav-bar > .list .item {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 1px 0px 3px #000;
+}
+/* line 32, ../sass/react-fullpage.scss */
+.nav-bar > .list .item:hover {
+  color: #f6d62d;
+}
+
+/* line 38, ../sass/react-fullpage.scss */
+.header-box {
+  border: 19px solid #4bb1ca;
+}
+/* line 40, ../sass/react-fullpage.scss */
+.header-box > .content-image {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-duration: 1.5s;
+}
+
+/* line 51, ../sass/react-fullpage.scss */
+.content-box {
+  border-right: 18.36vw solid #fff;
+}
+/* line 53, ../sass/react-fullpage.scss */
+.content-box > .content-image {
+  max-width: 730px;
+  display: block;
+  margin: 30px auto;
+}
+
+/* line 59, ../sass/react-fullpage.scss */
+.ball {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  background-color: #000;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* line 65, ../sass/react-fullpage.scss */
+.ball.-top-left {
+  top: 46px;
+  left: 43px;
+}
+/* line 69, ../sass/react-fullpage.scss */
+.ball.-top-right {
+  top: 46px;
+  right: 43px;
+}
+/* line 73, ../sass/react-fullpage.scss */
+.ball.-bottom-left {
+  bottom: 46px;
+  left: 43px;
+}
+/* line 77, ../sass/react-fullpage.scss */
+.ball.-bottom-right {
+  bottom: 46px;
+  right: 43px;
+}
+
+/* line 89, ../sass/react-fullpage.scss */
+.-red {
+  background: #e88276;
+}
+
+/* line 89, ../sass/react-fullpage.scss */
+.-blue {
+  background: #4bb1ca;
+}
+
+/* line 89, ../sass/react-fullpage.scss */
+.-green {
+  background: #8cc457;
+}
+
+/* line 89, ../sass/react-fullpage.scss */
+.-yellow {
+  background: #f6d62d;
+}

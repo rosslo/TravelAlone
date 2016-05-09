@@ -1,0 +1,92 @@
+@import '_variables.scss';
+*{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: "Microsoft JhengHei";
+	font-size: 16px;
+}
+.header-box ,.content-box{
+	width: 100%;
+	height: 100vh;
+	@extend %box-default;
+	overflow: hidden;
+	border-bottom: 1px dashed #000;
+}
+.nav-bar{
+	z-index: 99;
+	position: fixed;
+	top: 0;
+	background-color: rgba(75,177,202,.4);
+	width: 100%;
+	border-bottom: 1px dashed $blue;
+	> .list{
+		float: right;
+		.item{
+			display: inline-block;
+			margin: 10px;
+			padding: 10px 20px;
+			cursor: pointer;
+			color: $white;
+			text-shadow: 1px 0px 3px #000;
+			&:hover{
+				color: $yellow;
+			}
+		}
+	}
+}
+.header-box{
+	border: 19px solid $blue;
+	> .content-image{
+		position: absolute;
+	    right:0;
+	    left:0;
+	    margin:auto;
+    	top:0;
+    	bottom:0;
+	 	-webkit-animation-delay: 0.5s;
+	 	-webkit-animation-duration: 1.5s;
+	}
+}
+.content-box{
+	border-right: 18.36vw solid #fff;
+	> .content-image{
+		max-width: 730px;
+		display: block;
+		margin: 30px auto;
+	}
+}
+.ball{
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	background-color: #000;
+	@include border-radius(50%);
+	&.-top-left{
+		top:46px;
+		left: 43px;
+	}
+	&.-top-right{
+		top:46px;
+		right: 43px;
+	}
+	&.-bottom-left{
+		bottom:46px;
+		left: 43px;
+	}
+	&.-bottom-right{
+		bottom:46px;
+		right: 43px;
+	}
+}
+$ball-types: (
+  -red : rgb(232,130,118),
+  -blue : $blue,
+  -green : rgb(140,196,87),
+  -yellow : $yellow
+) !default;
+@each $name, $color in $ball-types {
+  .#{$name} {
+    background:$color;
+  }
+}

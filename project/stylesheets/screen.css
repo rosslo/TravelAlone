@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 2, ../sass/_variables.scss */
+/* line 4, ../sass/_variables.scss */
 .header-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -15,44 +15,45 @@ body {
 }
 
 /* line 9, ../sass/screen.scss */
-img {
-  display: block;
-}
-
-/* line 12, ../sass/screen.scss */
-#third .title {
+#box-facility .title {
   position: absolute;
   top: 20px;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 13, ../sass/screen.scss */
 .title, .image, .description {
-  margin-top: 50px;
+  margin-top: 30px;
+  display: block;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 .title {
   -webkit-animation-duration: 1.5s;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 .image {
   z-index: 999;
   max-width: 730px;
   -webkit-animation-delay: 0.5s;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
+#box-service .image {
+  margin-left: 100px;
+}
+
+/* line 30, ../sass/screen.scss */
 .description {
   -webkit-animation-delay: 0.5s;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 .section {
   position: relative;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 .header-box {
   height: 100%;
   width: 100%;
@@ -61,7 +62,7 @@ img {
   left: 0;
   border: 19px solid #4bb1ca;
 }
-/* line 41, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 .header-box .image {
   position: absolute;
   top: 0;
@@ -72,48 +73,58 @@ img {
   -webkit-animation-delay: 0s;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 .content-box {
   padding-left: 105px;
   text-align: left;
   border-right: 188px solid #4bb1ca;
 }
-/* line 55, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .content-box .title, .content-box .image, .content-box .description {
   visibility: hidden;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
+.fp-controlArrow.fp-next {
+  right: -120px;
+}
+
+/* line 72, ../sass/screen.scss */
 .box-blue {
   border-color: #4bb1ca;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .box-blue-green {
   border-color: #4bb6b9;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .box-yellow {
   border-color: #f6d62d;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
+.box-green {
+  border-color: #8cc457;
+}
+
+/* line 77, ../sass/screen.scss */
 .ball-group {
   clear: both;
   width: 100%;
   position: absolute;
 }
-/* line 74, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .ball-group.-top {
   top: 0;
 }
-/* line 77, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .ball-group.-bottom {
   bottom: 0;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .small-ball {
   display: inline-block;
   width: 14px;
@@ -125,31 +136,57 @@ img {
   -webkit-border-radius: 50%;
   -o-border-radius: 50%;
 }
-/* line 88, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .small-ball.-left {
   float: left;
 }
-/* line 91, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .small-ball.-right {
   float: right;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .ball-red {
   background: #e88276;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .ball-blue {
   background: #4bb1ca;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .ball-green {
   background: #8cc457;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .ball-yellow {
   background: #f6d62d;
+}
+
+/* line 112, ../sass/screen.scss */
+.btn-box {
+  text-align: center;
+}
+/* line 114, ../sass/screen.scss */
+.btn-box .btn {
+  letter-spacing: 2px;
+  color: #4bb1ca;
+  text-decoration: none;
+  border-radius: 24px;
+  border: 2px solid #4bb1ca;
+  padding: 15px 20px;
+  margin: 0 50px;
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+/* line 123, ../sass/screen.scss */
+.btn-box .btn:hover {
+  background-color: #3b70b0;
+  color: #fff;
+  border-color: #3b70b0;
 }

@@ -1,0 +1,22 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+.board-margin{
+	padding: 10px;
+	float: left;
+	width: 25%;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    .board{
+		padding: 10px;
+		border: 1px solid #ccc;
+		-webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+		.featured{
+			width: 100%;
+			height: auto;
+		}
+	}
+}

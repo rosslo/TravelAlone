@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Travel Alone</title>
 	<link rel="stylesheet" type="text/css" href="project/stylesheets/normalize.css">
 	<link rel="stylesheet" type="text/css" href="project/stylesheets/animate.css">
@@ -9,33 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="project/stylesheets/screen.css">
 	<script src="https://code.jquery.com/jquery-1.12.3.min.js"
 	integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="jquery.fullPage.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-		    $('#fullpage').fullpage({
-				'afterLoad': function(anchorLink, index){
-					$('.title, .image, .description').css('visibility','hidden');
-					$('.title, .image, .description').removeClass('fadeInUp animated');
-					if(index == 1){
-						$('.header-box .title, .header-box .image').css('visibility','visible');
-						$('.header-box .title, .header-box .image').addClass('fadeInUp animated');
-					}
-					if(index == 2){
-						$('#first .title, #first .image, #first .description').css('visibility','visible');
-						$('#first .title, #first .image, #first .description').addClass('fadeInUp animated');
-					}
-					if(index == 3){
-						$('#second .title, #second .image, #second .description').css('visibility','visible');
-						$('#second .title, #second .image, #second .description').addClass('fadeInUp animated');
-					}
-					if(index == 4){
-						$('#third .title, #third .image').css('visibility','visible');
-						$('#third .title, #third .image').addClass('fadeInUp animated');
-					}
-				}
-		    });
-		});
-	</script>
+	<script src='jquery.fullPage.min.js'></script>
+	<script src='reAnimation.js'></script>
 </head>
 <body>
 	<div id="fullpage">
@@ -52,16 +28,16 @@
 				</div>
 			</div>
 		</div>
-		<div class="section content-box box-blue" id="first">
+		<div class="section content-box box-blue" id="box-story">
 			<img class='title' src="images/title-story.png">
 			<img class="image" src="images/image-story.png">
 			<img class='description' src="images/desc-story.png">
 		</div>
-		<div class="section content-box box-blue-green" id="second">
+		<div class="section content-box box-blue-green" id="box-service">
 			<img class='title' src="images/title-service.png">
 			<img class="image" src="images/image-service.png">
 		</div>
-		<div class="section content-box box-yellow" id="third">
+		<div class="section content-box box-yellow" id="box-facility">
 			<img class='title' src="images/title-facility.png">
 			<div class="slide active">
 				<img class="image" src="images/image-facility-1.jpg">
@@ -86,6 +62,12 @@
 			</div>
 			<div class="slide">
 				<img class="image" src="images/image-facility-8.jpg">
+			</div>
+		</div>
+		<div class="section content-box box-green">
+			<div class="btn-box">
+				<a class='btn' id='btn-learn' href="board.html">點我看故事牆</a>
+				<a class='btn' id='btn-apply' href="reserve.html">點我申請隻旅</a>
 			</div>
 		</div>
 	</div>
