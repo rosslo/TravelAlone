@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 4, ../sass/_variables.scss */
+/* line 9, ../sass/_variables.scss */
 .header-box {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -15,45 +15,41 @@ body {
 }
 
 /* line 9, ../sass/screen.scss */
-#box-facility .title {
-  position: absolute;
-  top: 20px;
-}
-
-/* line 13, ../sass/screen.scss */
 .title, .image, .description {
+  max-width: 100%;
+  height: auto;
   margin-top: 30px;
   display: block;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
 .title {
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0s;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 .image {
-  z-index: 999;
-  max-width: 730px;
   -webkit-animation-delay: 0.5s;
 }
 
-/* line 26, ../sass/screen.scss */
-#box-service .image {
-  margin-left: 100px;
-}
-
-/* line 30, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 .description {
   -webkit-animation-delay: 0.5s;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 .section {
   position: relative;
+  border-right: 18.36vw solid #4bb1ca;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
+.section:nth-child(1) {
+  border: none;
+}
+
+/* line 32, ../sass/screen.scss */
 .header-box {
   height: 100%;
   width: 100%;
@@ -62,7 +58,7 @@ body {
   left: 0;
   border: 19px solid #4bb1ca;
 }
-/* line 44, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 .header-box .image {
   position: absolute;
   top: 0;
@@ -73,58 +69,70 @@ body {
   -webkit-animation-delay: 0s;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .content-box {
-  padding-left: 105px;
+  width: 80%;
+  margin: 0 auto;
   text-align: left;
-  border-right: 188px solid #4bb1ca;
 }
-/* line 58, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 .content-box .title, .content-box .image, .content-box .description {
   visibility: hidden;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
+#box-facility .title {
+  position: absolute;
+  top: 20px;
+}
+/* line 63, ../sass/screen.scss */
+#box-facility .image {
+  position: absolute;
+  top: 100px;
+  max-width: 800px;
+}
+
+/* line 69, ../sass/screen.scss */
 .fp-controlArrow.fp-next {
   right: -120px;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .box-blue {
   border-color: #4bb1ca;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .box-blue-green {
   border-color: #4bb6b9;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .box-yellow {
   border-color: #f6d62d;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .box-green {
   border-color: #8cc457;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .ball-group {
   clear: both;
   width: 100%;
   position: absolute;
 }
-/* line 81, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .ball-group.-top {
   top: 0;
 }
-/* line 84, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .ball-group.-bottom {
   bottom: 0;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .small-ball {
   display: inline-block;
   width: 14px;
@@ -136,40 +144,40 @@ body {
   -webkit-border-radius: 50%;
   -o-border-radius: 50%;
 }
-/* line 95, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .small-ball.-left {
   float: left;
 }
-/* line 98, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .small-ball.-right {
   float: right;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .ball-red {
   background: #e88276;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .ball-blue {
   background: #4bb1ca;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .ball-green {
   background: #8cc457;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .ball-yellow {
   background: #f6d62d;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .btn-box {
   text-align: center;
 }
-/* line 114, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .btn-box .btn {
   letter-spacing: 2px;
   color: #4bb1ca;
@@ -184,7 +192,7 @@ body {
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
 }
-/* line 123, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .btn-box .btn:hover {
   background-color: #3b70b0;
   color: #fff;
