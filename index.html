@@ -5,16 +5,15 @@
 	<title>Travel Alone</title>
 	<link rel="stylesheet" type="text/css" href="project/stylesheets/normalize.css">
 	<link rel="stylesheet" type="text/css" href="project/stylesheets/animate.css">
-	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.min.css">
 	<link rel="stylesheet" type="text/css" href="project/stylesheets/screen.css">
-	<script src="https://code.jquery.com/jquery-1.12.3.min.js"
-	integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+	<script src="jquery.min.js"></script>
 	<script src='jquery.fullPage.min.js'></script>
 	<script src='reAnimation.js'></script>
 </head>
 <body>
 	<div id="fullpage">
-		<div class="section  active">
+		<div class="section active">
 			<div class="header-box">
 				<div class="ball-group -top">
 					<span class='small-ball -left ball-red'></span>
@@ -27,46 +26,54 @@
 				</div>
 			</div>
 		</div>
-		<div class="section content-box box-blue" id="box-story">
-			<img class='title' src="images/title-story.png">
-			<img class="image" src="images/image-story.png">
-			<img class='description' src="images/desc-story.png">
-		</div>
-		<div class="section content-box box-blue-green" id="box-service">
-			<img class='title' src="images/title-service.png">
-			<img class="image" src="images/image-service.png">
-		</div>
-		<div class="section content-box box-yellow" id="box-facility">
-			<img class='title' src="images/title-facility.png">
-			<div class="slide active">
-				<img class="image" src="images/image-facility-1.jpg">
-			</div>
-			<div class="slide">
-				<img class="image" src="images/image-facility-2.jpg">
-			</div>
-			<div class="slide">
-				<img class="image" src="images/image-facility-3.jpg">
-			</div>
-			<div class="slide">
-				<img class="image" src="images/image-facility-4.jpg">
-			</div>
-			<div class="slide">
-				<img class="image" src="images/image-facility-5.jpg">
-			</div>
-			<div class="slide">
-				<img class="image" src="images/image-facility-6.jpg">
-			</div>
-			<div class="slide">
-				<img class="image" src="images/image-facility-7.jpg">
-			</div>
-			<div class="slide">
-				<img class="image" src="images/image-facility-8.jpg">
+		<div class="section box-blue" id="box-story">
+			<div class="content-box">
+				<img class='title' src="images/title-story.png">
+				<img class="image" src="images/image-story.png">
+				<img class='description' src="images/desc-story.png">
 			</div>
 		</div>
-		<div class="section content-box box-green">
-			<div class="btn-box">
-				<a class='btn' id='btn-learn' href="board.html">點我看故事牆</a>
-				<a class='btn' id='btn-apply' href="reserve.html">點我申請隻旅</a>
+		<div class="section box-blue-green" id="box-service">
+			<div class="content-box">
+				<img class='title' src="images/title-service.png">
+				<img class="image" src="images/image-service.png">
+			</div>
+		</div>
+		<div class="section box-yellow" id="box-facility">
+			<div class="content-box">
+				<img class='title' src="images/title-facility.png">
+				<div class="slide active">
+					<img class="image" src="images/image-facility-1.jpg">
+				</div>
+				<div class="slide">
+					<img class="image" src="images/image-facility-2.jpg">
+				</div>
+				<div class="slide">
+					<img class="image" src="images/image-facility-3.jpg">
+				</div>
+				<div class="slide">
+					<img class="image" src="images/image-facility-4.jpg">
+				</div>
+				<div class="slide">
+					<img class="image" src="images/image-facility-5.jpg">
+				</div>
+				<div class="slide">
+					<img class="image" src="images/image-facility-6.jpg">
+				</div>
+				<div class="slide">
+					<img class="image" src="images/image-facility-7.jpg">
+				</div>
+				<div class="slide">
+					<img class="image" src="images/image-facility-8.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="section box-green">
+			<div class="content-box">
+				<div class="btn-box">
+					<a class='btn' id='btn-learn' href="#">點我看故事牆</a>
+					<a class='btn' id='btn-apply' href="#">點我申請隻旅</a>
+				</div>
 			</div>
 		</div>
 	</div>
