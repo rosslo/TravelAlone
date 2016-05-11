@@ -83,12 +83,12 @@ body {
 /* line 59, ../sass/screen.scss */
 #box-facility .title {
   position: absolute;
-  top: 20px;
+  top: 30px;
 }
 /* line 63, ../sass/screen.scss */
 #box-facility .image {
   position: absolute;
-  top: 100px;
+  top: 120px;
   max-width: 655px;
   height: auto;
 }
